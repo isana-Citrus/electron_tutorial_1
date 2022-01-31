@@ -38,7 +38,7 @@ async function todo_delete(event) {
     listview();
 }
 //メインプロセスからのipcを受け取る
-window.dataapi.on("todo_all_delete", () => {
+window.dataapi.on_todo_all_del(() => {
     listview();
 });
 //起動時初期化用
